@@ -5,7 +5,7 @@
 #include "defineList.h"
 #include "operator.h"
 
-//åˆå§‹åŒ–
+//³õÊ¼»¯
 void Operator::initList(Sqlist &L) {
     L.data = new ElemType[InitSize];
     L.length = 0;
@@ -13,31 +13,31 @@ void Operator::initList(Sqlist &L) {
     return;
 }
 
-//æ’å…¥å…ƒç´ 
+//²åÈëÔªËØ
 bool Operator::insertList(Sqlist &L, int i, ElemType e) {
-    //åˆ¤æ–­æ˜¯å¦è¶Šç•Œ
+    //ÅĞ¶ÏÊÇ·ñÔ½½ç
     if (i <= 0 || i > L.length + 1)
         return false;
-    //åˆ¤æ–­æ˜¯å¦è¿˜æœ‰ä½ç½®
+    //ÅĞ¶ÏÊÇ·ñ»¹ÓĞÎ»ÖÃ
     if (L.length == L.MaxSize)
         return false;
-    //å¾€å³ç§»
+    //ÍùÓÒÒÆ
     for (int j = L.length; j >= i; j--) {
         L.data[j] = L.data[j - 1];
     }
-    //æ·»åŠ 
+    //Ìí¼Ó
     L.data[i - 1] = e;
-    //é•¿åº¦åŠ ä¸€
+    //³¤¶È¼ÓÒ»
     L.length++;
     return true;
 }
 
-//åˆ é™¤å…ƒç´ 
+//É¾³ıÔªËØ
 bool Operator::deleteList(Sqlist &L, int i, ElemType &e) {
-    //åˆ¤æ–­æ˜¯å¦è¶Šç•Œ
+    //ÅĞ¶ÏÊÇ·ñÔ½½ç
     if (i <= 0 || i > L.length)
         return false;
-    //åˆ¤æ–­æ˜¯å¦ä¸ºç©º
+    //ÅĞ¶ÏÊÇ·ñÎª¿Õ
     if (L.length == 0)
         return false;
     e = L.data[i - 1];
@@ -48,7 +48,19 @@ bool Operator::deleteList(Sqlist &L, int i, ElemType &e) {
     return true;
 }
 
-//æ‰“å°æ‰€æœ‰å…ƒç´ 
+//²éÕÒÔªËØ
+int Operator::locateList(Sqlist L, int e) {
+    for (int i = 0; i < L.length; i++) {
+        if (L.data[i] == e) {
+            cout << "²éÕÒµ½ÔªËØ" << e << ",ÔÚµÚ" << i << "¸öÎ»ÖÃ" << endl;
+            return i;
+        }
+    }
+    cout << "Î´²éÕÒµ½ÔªËØ" << e << endl;
+    return -1;
+}
+
+//´òÓ¡ËùÓĞÔªËØ
 void Operator::printList(Sqlist &L) {
     cout << "[";
     for (int i = 0; i < L.length; i++) {
@@ -62,7 +74,7 @@ void Operator::printList(Sqlist &L) {
     return;
 }
 
-//é”€æ¯åˆ—è¡¨
+//Ïú»ÙÁĞ±í
 void Operator::destroyList(Sqlist &L) {
     delete[] L.data;
 }

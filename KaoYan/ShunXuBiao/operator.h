@@ -19,6 +19,8 @@ public:
 
     bool deleteList(Sqlist &L, int i, ElemType &e);
 
+    int locateList(Sqlist L,ElemType e);
+
     void destroyList(Sqlist &L);
 };
 
