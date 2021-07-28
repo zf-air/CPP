@@ -168,6 +168,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShunXuBiao.dir\build.make CMakeFiles/ShunXuBiao.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+operator.obj: operator.cpp.obj
+
+.PHONY : operator.obj
+
+# target to build an object file
+operator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShunXuBiao.dir\build.make CMakeFiles/ShunXuBiao.dir/operator.cpp.obj
+.PHONY : operator.cpp.obj
+
+operator.i: operator.cpp.i
+
+.PHONY : operator.i
+
+# target to preprocess a source file
+operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShunXuBiao.dir\build.make CMakeFiles/ShunXuBiao.dir/operator.cpp.i
+.PHONY : operator.cpp.i
+
+operator.s: operator.cpp.s
+
+.PHONY : operator.s
+
+# target to generate assembly for a file
+operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShunXuBiao.dir\build.make CMakeFiles/ShunXuBiao.dir/operator.cpp.s
+.PHONY : operator.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -180,6 +207,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... operator.obj
+	@echo ... operator.i
+	@echo ... operator.s
 .PHONY : help
 
 

@@ -3,4 +3,4 @@ project(ShunXuBiao)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ShunXuBiao main.cpp)
+add_executable(ShunXuBiao main.cpp defineList.h operator.cpp operator.h)

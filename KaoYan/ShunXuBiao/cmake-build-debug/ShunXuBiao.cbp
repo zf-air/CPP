@@ -80,7 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/GitProjects/CPP/KaoYan/ShunXuBiao/defineList.h">
+			<Option target="ShunXuBiao"/>
+		</Unit>
 		<Unit filename="E:/GitProjects/CPP/KaoYan/ShunXuBiao/main.cpp">
+			<Option target="ShunXuBiao"/>
+		</Unit>
+		<Unit filename="E:/GitProjects/CPP/KaoYan/ShunXuBiao/operator.cpp">
+			<Option target="ShunXuBiao"/>
+		</Unit>
+		<Unit filename="E:/GitProjects/CPP/KaoYan/ShunXuBiao/operator.h">
 			<Option target="ShunXuBiao"/>
 		</Unit>
 		<Unit filename="E:/GitProjects/CPP/KaoYan/ShunXuBiao/CMakeLists.txt">

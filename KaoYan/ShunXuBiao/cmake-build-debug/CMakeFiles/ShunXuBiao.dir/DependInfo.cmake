@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/GitProjects/CPP/KaoYan/ShunXuBiao/main.cpp" "E:/GitProjects/CPP/KaoYan/ShunXuBiao/cmake-build-debug/CMakeFiles/ShunXuBiao.dir/main.cpp.obj"
+  "E:/GitProjects/CPP/KaoYan/ShunXuBiao/operator.cpp" "E:/GitProjects/CPP/KaoYan/ShunXuBiao/cmake-build-debug/CMakeFiles/ShunXuBiao.dir/operator.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ShunXuBiao.dir/main.cpp.obj"
+  "CMakeFiles/ShunXuBiao.dir/operator.cpp.obj"
   "ShunXuBiao.exe"
   "ShunXuBiao.exe.manifest"
   "ShunXuBiao.pdb"
