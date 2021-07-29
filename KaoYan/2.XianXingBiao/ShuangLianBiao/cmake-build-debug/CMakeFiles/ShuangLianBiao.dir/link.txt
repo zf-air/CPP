@@ -1,0 +1,3 @@
+"E:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ShuangLianBiao.dir/objects.a
+E:\Qt5.13.1\Tools\mingw730_64\bin\ar.exe cr CMakeFiles\ShuangLianBiao.dir/objects.a @CMakeFiles\ShuangLianBiao.dir\objects1.rsp
+E:\Qt5.13.1\Tools\mingw730_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ShuangLianBiao.dir/objects.a -Wl,--no-whole-archive -o ShuangLianBiao.exe -Wl,--out-implib,libShuangLianBiao.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ShuangLianBiao.dir\linklibs.rsp
