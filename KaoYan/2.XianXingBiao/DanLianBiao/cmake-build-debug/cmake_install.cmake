@@ -1,4 +1,4 @@
-# Install script for directory: E:/GitProjects/CPP/KaoYan/DanLianBiao
+# Install script for directory: E:/GitProjects/CPP/KaoYan/2.XianXingBiao/DanLianBiao
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/GitProjects/CPP/KaoYan/DanLianBiao/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/GitProjects/CPP/KaoYan/2.XianXingBiao/DanLianBiao/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

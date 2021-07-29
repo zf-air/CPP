@@ -51,6 +51,26 @@ bool List_TailInsert(LinkList &L) {
     return true;
 }
 
+//单链表原地逆置
+bool reverseList(LinkList &L) {
+    cout << "链表就地逆置" << endl;
+    LNode *p, *pre, *next;
+    pre = nullptr;
+    p = L->next;
+    if (p == nullptr)
+        return true;
+    next = p->next;
+    while (p) {
+        p->next = pre;
+        pre = p;
+        p = next;
+        if (p)
+            next = p->next;
+    }
+    L->next = pre;
+    return true;
+}
+
 //按序号查找节点值
 LNode *GetElem(LinkList L, int i) {
     cout << "---按序号查找---" << endl;
@@ -113,6 +133,7 @@ bool deleteElem(LinkList &L, int i) {
     return true;
 }
 
+//获取链表长度
 int GetLength(LinkList L) {
     cout << "---获取链表长度---" << endl;
     int cnt = 0;
@@ -167,6 +188,13 @@ int main() {
     printList(L);
     destroyList(L);*/
 
+    //链表就地逆置
+    List_HeadInsert(L);
+    printList(L);
+    reverseList(L);
+    printList(L);
+    destroyList(L);
+
     //按序号查找
     /*List_TailInsert(L);
     printList(L);
@@ -208,9 +236,9 @@ int main() {
     destroyList(L);*/
 
     //获取链表长度
-    List_TailInsert(L);
+    /*List_TailInsert(L);
     printList(L);
     int len = GetLength(L);
     cout << "链表长度为" << len << endl;
-    destroyList(L);
+    destroyList(L);*/
 }
